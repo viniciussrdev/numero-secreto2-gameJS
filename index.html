@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- O meta viewport define como o navegador deve controlar as dimensões e a escala da página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- O script do ResponsiveVoice é utilizado para adicionar funcionalidades de texto para voz -->
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Links para importar as fontes Chakra Petch e Inter do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Game JS - Número Secreto 2</title>
+</head>
+
+<body>
+    <!-- Container principal da aplicação -->
+    <div class="container">
+        <!-- Conteúdo do container -->
+        <div class="container__conteudo">
+            <!-- Informações do jogo -->
+            <div class="container__informacoes">
+                <!-- Textos e campo de entrada -->
+                <div class="container__texto">
+                    <h1></h1>
+                    <p class="texto__paragrafo"></p>
+                </div>
+                <input type="number" min="1" max="10" class="container__input">
+                <!-- Botões de ação -->
+                <div class="chute container__botoes">
+                    <button onclick="verificarChute()" class="container__botao">Chutar</button>
+                    <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
+                </div>
+            </div>
+            <!-- Imagem ilustrativa -->
+            <img src="./img/ia.png" alt="Uma pessoa olhando para a esquerda" class="container__imagem-pessoa" />
+        </div>
+    </div>
+    <!-- Link para o arquivo JavaScript -->
+    <script src="app.js" defer></script>
+</body>
+
+</html>
